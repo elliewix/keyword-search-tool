@@ -19,7 +19,7 @@ headerids = [headers.index(h) for h in headers if h in headers_to_look_in] # fin
 keywords_source = 'keywords_miller.txt'
 
 with open(keywords_source, 'rt') as fin:
-	keywords = [l.strip().lower() for l in fin.readlines()]
+	keywords = [l.strip().lower() for l in fin.readlines() if len(word) > 0]
 
 #print keywords
 
