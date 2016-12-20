@@ -12,7 +12,7 @@ keyword_search.py
 
 This tool uses a set of predefined keywords from a text file, searches through a csv file of project data from aiddata.org, and generates two data files:  keyword_results and project_subset results.  
 
-Techinical information:  written with Python 2.7 using only standard library tools.  Not a command line tool so the expectation is that you change the script to change the source files, etc.
+Technical information:  written with Python 2.7 using only standard library tools.  Not a command line tool so the expectation is that you change the script to change the source files, etc.
 
 Keyword results
 ---------------
