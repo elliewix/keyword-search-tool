@@ -2,7 +2,7 @@ import csv
 
 
 # this is the file path for your source CSV of all the data
-source = 'project.csv'
+source = 'project__1_2016-09-24-15-45.csv'
 
 with open(source, 'rt') as fin:
 	fin = csv.reader(fin)
@@ -16,10 +16,10 @@ headerids = [headers.index(h) for h in headers if h in headers_to_look_in] # fin
 
 
 # this is the file path for your keywords
-keywords_source = 'keywords_miller.txt'
+keywords_source = 'keywords_miller_includespanish.txt'
 
 with open(keywords_source, 'rt') as fin:
-	keywords = [l.strip().lower() for l in fin.readlines() if len(word) > 0]
+	keywords = [l.strip().lower() for l in fin.readlines() if len(l) > 0]
 
 #print keywords
 
